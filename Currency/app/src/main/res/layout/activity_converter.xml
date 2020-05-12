@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConverterActivity">
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="205dp"
+        android:layout_height="80dp"
+        android:drawableTop="@drawable/ic_cached_black_40dp"
+        android:text="Конвертер"
+        android:textAllCaps="false"
+        android:textColor="#CCD4FF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="336dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="20dp"
+        android:text="Исходная валюта"
+        android:textColor="#A0A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="15dp"
+        android:text="Конечная валюта"
+        android:textColor="#A0A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="336dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/numberField"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHighlight="#CCD4FF"
+        android:textColorHint="@color/colorLine"
+        android:textColorLink="@color/colorLine"
+        android:textCursorDrawable="@color/colorLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickConvert"
+        android:text="Конвертировать"
+        android:textColor="#C5CAE9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberField" />
+
+    <TextView
+        android:id="@+id/resultField"
+        android:layout_width="336dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#A0A0A0"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="205dp"
+        android:layout_height="80dp"
+        android:drawableTop="@drawable/ic_attach_money_black_40dp"
+        android:onClick="onClickMain"
+        android:text="Главная"
+        android:textAllCaps="false"
+        android:textColor="#CCD4FF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
